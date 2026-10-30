@@ -252,7 +252,6 @@ See [SPIKES.md](./SPIKES.md). Summary:
 | Distance rendering cost / instability at 2-3 km | Medium | High | S4 benchmark; detail corridor; accept 1.5 km range limit if needed |
 | Determinism of RK integration across builds | Low-Medium | High | Fixed step, `double`, strict FP, S2 |
 | Perception of weapon-themed content | Low | Medium | Sport framing; no human targets |
-| Employer/IP perception (defense-adjacent domain) | Low-Medium | High | Public references only; personal equipment; documented boundary |
 | Hyper-real art volume | Medium | Medium | Data-driven ranges; few hero scenes |
 | Duo/duel netcode complexity | Medium | Low (deferred) | Async first |
 
