@@ -16,6 +16,11 @@ Each spike has a question, build, pass criteria, fail response and recorded evid
 | **S8** | Does server re-simulation reject cheating? | Craft tampered logs (impossible timing, modified turret values) | 100% of tampered logs rejected; 0% false rejects on 1,000 legitimate runs | Tighten bounds; improve logging |
 | **S9** | Is hit adjudication exact? | Compare trajectory/geometry intersection with analytic cases | Zero disagreements on 10,000 cases within geometry tolerance | Fix swept-collision handling |
 | **S10** | Does the optic model read correctly? | Reticle at known angular sizes | Ranging by reticle error ≤ 2% on test targets | Correct FOV/subtension math |
+| **S11** | Does the learned wind reader beat the optical-flow baseline? | Render clips with ground-truth wind; train per ML.md section 1 | Lower crosswind RMSE than the baseline on held-out ranges (paired bootstrap p<0.05); interval coverage within 5 points of nominal; decision-level miss distance reduced | Improve data/randomization; report negative result |
+| **S12** | Can a general VLM spotter call wind usefully? | Local VLM on spotting-scope frames vs truth | MAE, calibration and cost reported against baselines; decision recorded (include/exclude) | Drop spotter; keep coach only |
+| **S13** | Does the coach ground its claims? | Deterministic checker on 200 coach outputs | >= 95% of cited shot IDs exist and support claims; unsupported claims flagged | Tighten tool outputs |
+
+Pass thresholds are initial targets and must be justified before a pass is claimed.
 
 ## Order and dependencies
 S1 → S2 → S3 → S4 → S5; S6 after S1; S7 after S1-S3; S8 after S2; S9 and S10 any time after S1.

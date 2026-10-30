@@ -3,7 +3,7 @@
 **Created:** 2026-10-29
 **Status:** Draft v1 - design only; nothing implemented or verified
 **Platform dependency:** [hyperreal-platform](https://github.com/PCSchmidt/hyperreal-platform) (HRCore, HRScenario, HRReplay, HRAtmosphere, HRGeo, HRRating)
-**Companion:** [SPIKES.md](./SPIKES.md) - verification ladder with pass/fail criteria
+**Companion documents:** [REQUIREMENTS.md](./REQUIREMENTS.md) (user stories, FR IDs, session walkthrough) | [ML.md](./ML.md) | [AGENTS.md](./AGENTS.md) | [SPIKES.md](./SPIKES.md) | [PRIOR_ART.md](./PRIOR_ART.md) - verification ladder with pass/fail criteria
 
 > Items tagged `[VERIFY]` are assumptions not yet checked against the installed engine, a license, or measured data.
 
